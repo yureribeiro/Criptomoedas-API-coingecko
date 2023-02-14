@@ -91,6 +91,14 @@ body {
   align-items: center;
   font-size: .9rem;
   border: .1rem solid #f1f1f160;
-  padding: .7rem 0;
+  padding: .7rem 1rem;
   border-radius: .5rem;
+}
+
+.red {
+  color: #f00606;
+}
+
+.green {
+  color: #53eb67;
 }

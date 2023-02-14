@@ -14,11 +14,11 @@ const Coin = ({ name, image, symbol, price, volume, priceChange }) => {
           <p className='coin-symbol'>{symbol}</p>
         </div>
         <div className='coin-data'>
-          <p className='coin-price'>PREÇO: {price.toLocaleString('es-US', styleUSD)}</p> 
-          <p className='coin-volume'>VOLUME: {volume.toLocaleString('es-US', styleUSD)}</p> 
+          <p className='coin-price'>{price.toLocaleString('es-US', styleUSD)}</p> 
+          <p className='coin-volume'>VOL: {volume.toLocaleString('es-US', styleUSD)}</p> 
           <p className={`coin__percent 
             ${priceChange < 0 ? `red` : `green`}`}>
-          VARIAÇÃO 24H: {priceChange.toFixed(2)}%
+           {priceChange.toFixed(2)}%
           </p>
         </div>
       </div>
