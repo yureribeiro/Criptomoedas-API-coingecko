@@ -1,38 +1,96 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(22, 17, 68, 0.61);
+  font-family: arial;
+}
+
+.coin-app {
+  padding: 0 0 1rem 0;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  background-color: #090f306e;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: .1rem solid #f1f1f15d;
+  box-shadow: 15px 15px 20px #070b1dbd;
+  border-radius: .5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.coin-search {
+  border: transparent;
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 100%;
+  border-radius: .5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.coin-text {
+  text-shadow: .2rem .2rem .2rem #070b1d;
+  color: #ffff;
+  padding: 0 0 1rem 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-input {
+  box-shadow: 5px 5px 10px #070b1dbd;
+  color: #ffff;
+  border-radius: .5rem;
+  width: 70%;
+  padding: .7rem 2rem;
+  background-color: #090f306e;
+  border: transparent;
+  outline: none;
+} .search-input::placeholder {
+  color: #ffff;
+}
+
+.coin-row {
+  box-shadow: 10px 10px 15px #070b1dbd;
+  color: #fff;
+  font-weight: bold;
+  background-color: #090f304d;
+  width: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  border: .1rem solid #f1f1f1c7;
+}
+.coin {
+  text-shadow: .2rem .2rem .2rem #070b1d;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-radius: .5rem;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+.coin img {
+  width: 2.7rem; 
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coin-data {
+  display: flex;
+  gap: 1rem;
+  text-shadow: .2rem .2rem .2rem #070b1d;
+  box-shadow: 2px 2px 5px #070b1dbd;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .9rem;
+  border: .1rem solid #f1f1f160;
+  padding: .7rem 0;
+  border-radius: .5rem;
 }
