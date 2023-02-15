@@ -1,14 +1,16 @@
 .container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
   color: #ffffff;
   width: 100%;
   padding: 1rem 4rem;
   background-color: #090f306e;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 3px 5px #070b1dbd;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  box-shadow: 0 -3px 5px #070b1dbd;
 }
 
 .title-footer {
@@ -17,4 +19,21 @@
 
 .credit {
   font-weight: bold;
+}
+
+@media (max-width: 590px) {
+  .container-footer {
+    position: fixed;
+    bottom: 0 ;
+    padding: 1rem 0;
+    justify-content: flex-start;
+  }
+
+ .title-footer {
+  opacity: 0;
+ }
+
+ .credit {
+ padding-left: 1rem;
+ }
 }
