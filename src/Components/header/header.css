@@ -1,0 +1,24 @@
+.container-header {
+  color: #ffffff;
+  width: 100%;
+  padding: 1rem 4rem;
+  background-color: #090f306e;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 3px 5px #070b1dbd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-header {
+  font-size: 1.5rem;
+}
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+.nav-links {
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
